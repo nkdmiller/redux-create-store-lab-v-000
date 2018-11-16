@@ -1,6 +1,6 @@
 export default function createStore(reducer) {
   
-  let state;
+  let state = reducer;
   function dispatch(action) {
     state = reducer(state, action);
     render();
